@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <title>Home</title>
+    </head>
+    <body>
+        <header class="header">
+            <h2>Clothings</h2>
+            <div class="navigation">
+                <ul class="lists">
+                    <li><a id="home" href="/">Home</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                    <li><a id="login" href="#">Login/Sign Up</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="goodspace">
+            <marquee><h1>Various Ads... Heavy DISCOUNT Going On, HURRY!!! HURRY!!!</h1></marquee>
+        </div>
+        <div class="bracket">
+        {% for item in items %}
+            <div class="item">
+                <div class="img"><marquee>Image</marquee></div>
+                <h2>{{item.name}}</h2><br>
+                <h3><strike>RS.{{item.buy_price}}</strike>   RS.{{item.sell_price}}</h3>
+                <p>Description: {{item.description}}</p>
+                <p>Category: {{item.category_name}}</p><br>
+                <button class='btn'>Buy</button><br><button class='btn2'>Add to cart</button>
+            </div>
+        {%endfor%}
+        </div>
+    </body>
+</html>
+
+
+
+

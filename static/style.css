@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+}
+.header{
+    background-color: rgb(58, 57, 57);
+    color:white;
+    padding:20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(94, 93, 93);
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation{
+    margin-top:15px;
+    width: 60%;
+}
+
+.lists{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.lists li{
+    list-style: none;
+}
+.lists li a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+.goodspace{
+    height: 500px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bracket{
+    margin-top:15px;
+    padding:15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(119, 118, 118) ;
+    width:15%;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    border: 1px solid black;
+    width:90%;
+    height: 200px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
